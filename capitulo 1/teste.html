@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+ <body>
+
+  <label>Nome:</label> 
+  <input id="nome"  type="text" />
+  <script src="jquery.js"></script>
+  <script>
+    $('#nome').blur(function() {
+        var texto = $(this).val();
+        if(!texto) {
+            alert("Não deve ser vazio!");
+        }
+    });
+  </script>
+ </body>
+</html>
